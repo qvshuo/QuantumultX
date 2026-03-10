@@ -7,6 +7,15 @@
 - 解锁 **Emby Premiere**
 - 部分解锁 **Spotify Premium**
 
+## 使用
+
+在 **Quantumult X** 配置文件的 `[rewrite_remote]` 部分添加：
+
+```
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/emby_premium.conf, tag=Emby Premiere, update-interval=172800, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/spotify.conf, tag=Spotify Premium, update-interval=172800, enabled=true
+```
+
 ## 说明
 
 - **Emby Premiere 解锁思路参考：**
