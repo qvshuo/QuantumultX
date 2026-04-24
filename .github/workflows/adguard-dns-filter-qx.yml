@@ -24,7 +24,7 @@ jobs:
           curl -fsSL "$SOURCE_URL" \
           | grep '^||.*\^$' \
           | sed 's/^||//; s/\^$//' \
-          | sed 's/^\*\.//; s/^\.//' \
+          | sed 's/^[\*\.\-]*//' \
           | sed 's/$/,reject/; s/^/DOMAIN-SUFFIX,/' \
           | sort -u \
           > body.txt
