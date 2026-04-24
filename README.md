@@ -4,7 +4,7 @@
 
 ## 功能
 
-- **广告过滤**：基于 AdGuard DNS Filter
+- **广告过滤**：由 AdGuard DNS Filter 转换而来
 - **重写解锁**：解锁 **Emby Premiere**，部分解锁 **Spotify Premium**
 
 ## 使用
