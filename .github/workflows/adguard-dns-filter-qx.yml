@@ -32,7 +32,7 @@ jobs:
             echo "# Source: https://adguardteam.github.io/AdGuardSDNSFilter/"
             echo "# Total Rules: $(wc -l < body.txt)"
             cat body.txt
-          } > adguard-dns.list
+          } > AdGuardDNSfilter.list
           
           rm body.txt
 
@@ -46,7 +46,7 @@ jobs:
           git add AdGuardDNSfilter.list
           
           if ! git diff --cached --quiet; then
-            git commit -m "chore: weekly update adguard filter dns rules $NOW UTC"
+            git commit -m "chore: weekly update adguard dns filter rules $NOW UTC"
             git push
           else
             echo "No changes detected, skipping push."
