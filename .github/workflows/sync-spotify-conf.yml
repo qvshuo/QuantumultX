@@ -1,4 +1,4 @@
-name: Sync spotify.conf from app2smile
+name: Sync Spotify Config from app2smile
 
 on:
   schedule:
@@ -14,12 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Download spotify.conf
-        run: curl -fsSL https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf -o spotify.conf
-
-      - name: Commit and push
+      - name: Sync File
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          curl -fsSL https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf -o spotify.conf
+
+      - name: Commit and Push
+        run: |
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
           git add spotify.conf
-          git diff --cached --quiet || (git commit -m "chore: sync spotify.conf" && git pull --rebase && git push)
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync spotify.conf $NOW (UTC+8)"
+            git push
+          else
+            echo "No changes detected, skipping push."
+          fi
