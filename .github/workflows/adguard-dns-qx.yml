@@ -1,0 +1,53 @@
+name: AdGuard DNS Filter for Quantumult X
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Download, Convert & Header
+        run: |
+          NOW=$(date -u '+%Y-%m-%d %H:%M:%S')
+          
+          curl -fsSL 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt' \
+          | grep '^||.*\^$' \
+          | sed 's/^||//; s/\^$//; s/$/,reject/; s/^/DOMAIN-SUFFIX,/' \
+          | sort -u \
+          > body.txt
+
+          {
+            echo "# AdGuard DNS Filter for Quantumult X"
+            echo "# Update: $NOW UTC"
+            echo "# Source: https://adguardteam.github.io/AdGuardSDNSFilter/"
+            echo "# Total Rules: $(wc -l < body.txt)"
+            cat body.txt
+          } > adguard-dns.list
+          
+          rm body.txt
+
+      - name: Commit and Push
+        run: |
+          NOW=$(date -u '+%Y-%m-%d %H:%M:%S')
+          
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add AdGuardDNSfilter.list
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: weekly update adguard filter dns rules $NOW UTC"
+            git push
+          else
+            echo "No changes detected, skipping push."
+          fi
