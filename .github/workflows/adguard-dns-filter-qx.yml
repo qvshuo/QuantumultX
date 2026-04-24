@@ -18,20 +18,20 @@ jobs:
 
       - name: Download, Convert & Header
         run: |
-          NOW=$(date -u '+%Y-%m-%d %H:%M:%S')
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
           SOURCE_URL="https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
           
           curl -fsSL "$SOURCE_URL" \
           | grep '^||.*\^$' \
           | sed 's/^||//; s/\^$//' \
-          | sed 's/^[\*\.\-]*//' \
+          | sed 's/^[*.-]*//' \
           | sed 's/$/,reject/; s/^/DOMAIN-SUFFIX,/' \
           | sort -u \
           > body.txt
 
           {
             echo "# AdGuard DNS Filter for Quantumult X"
-            echo "# Update: $NOW UTC"
+            echo "# Update: $NOW (UTC+8)"
             echo "# Source: $SOURCE_URL"
             echo "# Total Rules: $(wc -l < body.txt)"
             cat body.txt
@@ -41,7 +41,7 @@ jobs:
 
       - name: Commit and Push
         run: |
-          NOW=$(date -u '+%Y-%m-%d %H:%M:%S')
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
           
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -49,7 +49,7 @@ jobs:
           git add AdGuardDNSfilter.list
           
           if ! git diff --cached --quiet; then
-            git commit -m "chore: weekly update adguard dns filter rules $NOW UTC"
+            git commit -m "chore: weekly update adguard dns filter rules $NOW (UTC+8)"
             git push
           else
             echo "No changes detected, skipping push."
