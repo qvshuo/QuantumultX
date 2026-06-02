@@ -9,7 +9,7 @@
 
 ## 使用
 
-### 分流规则 (去广告)
+### 分流规则（去广告）
 
 在 **Quantumult X** 配置文件的 `[filter_remote]` 部分添加：
 
@@ -17,7 +17,7 @@
 https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list, tag=AdGuard DNS Filter, update-interval=604800, enabled=true
 ```
 
-### 重写规则 (解锁)
+### 重写规则（解锁）
 
 在 **Quantumult X** 配置文件的 `[rewrite_remote]` 部分添加：
 
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/spotify.con
 ## 说明
 
 **广告过滤规则来源：**
-- [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) (由 GitHub Actions 每周自动转换更新)
+- [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) （由 GitHub Actions 每周自动转换更新）
 
 **Emby Premiere 解锁思路参考：**
 - [Emby Premiere 破解思路 - 技术 - 远方](https://yuanfangblog.xyz/technology/159.html)
