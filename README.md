@@ -37,9 +37,9 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/spotify.con
 - [Emby Premiere 破解思路 - 技术 - 远方](https://yuanfangblog.xyz/technology/159.html)
 - [破解 emby-server - 软件逆向 - 看雪安全社区｜专业技术交流与安全研究论坛](https://bbs.kanxue.com/thread-263534-1.htm)
 
-**Spotify Premium 解锁规则来源：**
-- [app2smile/rules — iOS App去广告](https://github.com/app2smile/rules)
-
 **Reddit 重写规则来源：**
 - [RavelloH 的 Reddit 自动翻译](https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet)
 - [ddgksf2013 的 Reddit增强[墨鱼版]](https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf)
+
+**Spotify Premium 解锁规则来源：**
+- [app2smile/rules — iOS App去广告](https://github.com/app2smile/rules)
