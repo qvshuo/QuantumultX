@@ -6,10 +6,11 @@
 
 - **广告过滤**：由 AdGuard DNS Filter 转换而来
 - **重写解锁**：解锁 **Emby Premiere**，部分解锁 **Spotify Premium**
+- **体验增强**：**Reddit** 去广告 & 部分解锁 Premium & 自动翻译
 
 ## 使用
 
-### 分流规则（去广告）
+### 分流规则
 
 在 **Quantumult X** 配置文件的 `[filter_remote]` 部分添加：
 
@@ -17,12 +18,13 @@
 https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list, tag=AdGuard DNS Filter, update-interval=604800, enabled=true
 ```
 
-### 重写规则（解锁）
+### 重写规则
 
 在 **Quantumult X** 配置文件的 `[rewrite_remote]` 部分添加：
 
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/emby_premium.conf, tag=Emby Premiere, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/reddit_evolution.snippet, tag=Reddit Evolution, update-interval=86400, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/spotify.conf, tag=Spotify Premium, update-interval=86400, enabled=true
 ```
 
@@ -37,3 +39,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/spotify.con
 
 **Spotify Premium 解锁规则来源：**
 - [app2smile/rules — iOS App去广告](https://github.com/app2smile/rules)
+
+**Reddit 重写规则来源：**
+- [RavelloH 的 Reddit 自动翻译](https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet)
+- [ddgksf2013 的 Reddit增强[墨鱼版]](https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf)
