@@ -1,0 +1,45 @@
+name: Sync Config Files
+
+on:
+  schedule:
+    - cron: '30 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Sync Files
+        run: |
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          curl -fsSL https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf -o spotify.conf
+          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/StartUpAds.conf -o StartUpAds.conf
+          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AmapAds.conf
+          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/GoofishAds.conf -o GoofishAds.conf
+          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseAds.conf -o NeteaseAds.conf
+          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/YoutubeAds.conf -o YoutubeAds.conf
+          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/BiliBiliAdsLite.conf -o BiliBiliAdsLite.conf
+          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/XiaoHongShuAds.conf -o XiaoHongShuAds.conf
+          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/scripts/javdbapp.ads.js -o javdbapp.ads.js
+          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/scripts/zhihu.ads.js -o zhihu.ads.js
+
+      - name: Commit and Push
+        run: |
+          NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
+          
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add .
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync config files $NOW (UTC+8)"
+            git push
+          else
+            echo "No changes detected, skipping push."
+          fi
