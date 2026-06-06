@@ -7,7 +7,7 @@
 - **通用广告过滤**：由 AdGuard DNS Filter 转换而来
 - **应用内去广告 & 去除开屏广告**：支持国内外众多应用
 - **重写解锁**：解锁 **Emby Premiere**，部分解锁 **Spotify Premium**
-- **体验增强**：**Reddit** 自动翻译 & 部分解锁 Premium
+- **体验增强**：**Reddit** 自动翻译 & 部分解锁 Premium，**NodeSeek** 自动签到
 
 ## 使用
 
@@ -48,6 +48,17 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPrem
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAutoCheckIn.snippet, tag=NodeSeek 自动签到, update-interval=86400, opt-parser=false, enabled=true
+```
+
+NodeSeek 自动签到功能的使用方法：
+
+1. 点击论坛个人头像进入用户空间页面以获取请求头
+2. 添加本地任务：
+
+```
+[task_local]
+1 0 * * * https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js, tag=NS🍗签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/ZenMoFeiShi.png, enabled=true
 ```
 
 ## 说明
@@ -72,3 +83,6 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoT
 
 **Reddit 自动翻译规则来源：**
 - [RavelloH - Reddit 自动翻译](https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet)
+
+**NodeSeek 自动签到规则来源：**
+- [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)

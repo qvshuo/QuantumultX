@@ -2,7 +2,7 @@ name: Sync Config Files
 
 on:
   schedule:
-    - cron: "30 0 * * 0"
+    - cron: "30 16 * * *"
   workflow_dispatch:
 
 permissions:
