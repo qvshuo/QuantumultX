@@ -33,8 +33,8 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XianYuAdBlo
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XiaoHongShuAdBlock.conf, tag=小红书 AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/YouTubeAdBlock.conf, tag=YouTube AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBlock.js, tag=JavDB AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBlock.js, tag=JavDB AdBlock, update-interval=86400, opt-parser=true, enabled=true
 ```
 
 重写解锁：

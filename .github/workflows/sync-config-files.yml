@@ -19,7 +19,7 @@ jobs:
           NOW=$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')
           curl -fsSL https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet -o RedditAutoTranslate.snippet
           curl -fsSL https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf -o SpotifyPremium.conf
-          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AMapBlock.conf
+          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AMapAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/GoofishAds.conf -o XianYuAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseAds.conf -o NeteaseCloudMusicAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf -o RedditAdBlock.conf
