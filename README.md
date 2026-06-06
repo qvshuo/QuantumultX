@@ -51,7 +51,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoT
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAutoCheckIn.snippet, tag=NodeSeek 自动签到, update-interval=86400, opt-parser=true, enabled=true
 ```
 
-> 部分重写规则需启用资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）。
+> 部分重写规则需启用资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）。
 
 ## 说明
 
