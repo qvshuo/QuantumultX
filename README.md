@@ -16,7 +16,7 @@
 在 **Quantumult X** 配置文件的 `[filter_remote]` 部分添加：
 
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list, tag=AdGuard DNS Filter, update-interval=604800, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list, tag=AdGuard DNS Filter, update-interval=604800, opt-parser=false, enabled=true
 ```
 
 ### 重写规则
@@ -26,28 +26,28 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list,
 去除广告：
 
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/AMapAdBlock.conf, tag=高德地图 AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/BiliBiliAdBlockLite.conf, tag=哔哩哔哩 AdBlock Lite, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NeteaseCloudMusicAdBlock.conf, tag=网易云音乐 AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XianYuAdBlock.conf, tag=闲鱼 AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XiaoHongShuAdBlock.conf, tag=小红书 AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/YouTubeAdBlock.conf, tag=YouTube AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBlock.js, tag=JavDB AdBlock, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/AMapAdBlock.conf, tag=高德地图 AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/BiliBiliAdBlockLite.conf, tag=哔哩哔哩 AdBlock Lite, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NeteaseCloudMusicAdBlock.conf, tag=网易云音乐 AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XianYuAdBlock.conf, tag=闲鱼 AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XiaoHongShuAdBlock.conf, tag=小红书 AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/YouTubeAdBlock.conf, tag=YouTube AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBlock.js, tag=JavDB AdBlock, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 重写解锁：
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/emby_premium.conf, tag=Emby Premiere, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/emby_premium.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 体验增强：
 
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 ## 说明
