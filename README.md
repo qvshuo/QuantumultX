@@ -40,9 +40,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBloc
 重写解锁：
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/emby_premium.conf, tag=Emby Premiere, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
-```
-
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPremium.conf, tag=Spotify Premiere, update-interval=86400, opt-parser=false, enabled=true
 体验增强：
 
 ```
