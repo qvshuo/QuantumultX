@@ -45,10 +45,14 @@ jobs:
           grep -v '^hostname = ' "$OUT" \
             | grep -v '^$' > "$TMP_FILE"
 
-          printf "hostname = %s\n\n" "$HOSTNAMES" > "$OUT"
-          cat "$TMP_FILE" >> "$OUT"
+          {
+            printf "# authors: RavelloH & ddgksf2013\n\n"
+            printf "hostname = %s\n\n" "$HOSTNAMES"
+            cat "$TMP_FILE"
+          } > "$OUT"
 
           # Validate output
+          grep -q '^# authors: RavelloH & ddgksf2013$' "$OUT"
           grep -q '^hostname = ' "$OUT"
           grep -q ' url script-' "$OUT"
 
