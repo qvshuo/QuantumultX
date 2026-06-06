@@ -48,18 +48,10 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPrem
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAutoCheckIn.snippet, tag=NodeSeek 自动签到, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAutoCheckIn.snippet, tag=NodeSeek 自动签到, update-interval=86400, opt-parser=true, enabled=true
 ```
 
-NodeSeek 自动签到功能的使用方法：
-
-1. 点击论坛个人头像进入用户空间页面以获取请求头
-2. 添加本地任务：
-
-```
-[task_local]
-1 0 * * * https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js, tag=NS🍗签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/ZenMoFeiShi.png, enabled=true
-```
+> 部分重写规则需启用资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）。
 
 ## 说明
 
@@ -84,5 +76,6 @@ NodeSeek 自动签到功能的使用方法：
 **Reddit 自动翻译规则来源：**
 - [RavelloH - Reddit 自动翻译](https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet)
 
-**NodeSeek 自动签到规则来源：**
+**NodeSeek 自动签到规则来源与使用方法：**
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)
+- 点击论坛个人头像进入用户空间页面以获取请求头
