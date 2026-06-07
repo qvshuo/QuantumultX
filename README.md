@@ -57,7 +57,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 - 实现 NodeSeek 自动签到所需额外步骤：
 
   ```
-  5 0 * * * https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.js, tag=NodeSeek 自动签到, img-url=https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png, enabled=true
+  5 0 * * * https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.js, tag=NodeSeek 自动签到, img-url=https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/nodeseek-144x144.png, enabled=true
   ```
 
 ## 说明
