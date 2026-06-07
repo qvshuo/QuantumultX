@@ -63,7 +63,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAut
 ## 说明
 
 **通用广告过滤规则来源：**
-- [AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) 
+- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) 
 
 **应用内去广告 规则来源：**
 - [ddgksf2013/Rewrite](https://github.com/ddgksf2013/Rewrite)：哔哩哔哩，小红书 和 知乎
