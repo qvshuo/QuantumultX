@@ -20,6 +20,7 @@ jobs:
           curl -fsSL https://gist.githubusercontent.com/RavelloH/68ed0626dae69a1ce7c8ad6887087ea1/raw/main.snippet -o RedditAutoTranslate.snippet
           curl -fsSL https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf -o SpotifyPremium.conf
           curl -fsSL https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Youtube.snippet -o YouTubeAdBlock.conf
+          curl -fsSL https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js -o NodeSeekCheckIn.js
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AMapAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseAds.conf -o NeteaseCloudMusicAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf -o RedditAdBlock.conf

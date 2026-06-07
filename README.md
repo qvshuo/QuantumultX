@@ -48,16 +48,16 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPrem
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAutoCheckIn.snippet, tag=NodeSeek 自动签到, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.snippet, tag=NodeSeek 论坛签到, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 额外步骤：
 
 - 部分重写规则依赖资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）
-- NodeSeek 自动签到功能所需额外步骤：
+- 实现 NodeSeek 自动签到所需额外步骤：
 
   ```
-  5 0 * * * https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js, tag=NS🍗签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/ZenMoFeiShi.png, enabled=true
+  5 0 * * * https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.js, tag=NodeSeek 自动签到, img-url=https://www.nodeseek.com/static/image/favicon/android-chrome-192x192.png, enabled=true
   ```
 
 ## 说明
