@@ -2,8 +2,6 @@
 # 作者：怎么肥事
 # 主页：https://github.com/ZenmoFeiShi/Qx
 
-[rewrite_local]
-^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/\d+\?readme=1$ url script-request-header https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js
-
-[MITM]
 hostname = www.nodeseek.com
+
+^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/\d+\?readme=1$ url script-request-header https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js
