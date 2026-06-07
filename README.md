@@ -53,7 +53,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekAut
 
 额外步骤：
 
-- 部分重写规则依赖资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）；
+- 部分重写规则依赖资源解析器（e.g. [KOP-XIAO](https://github.com/KOP-XIAO) 的 [resource-parser.js](https://github.com/KOP-XIAO/QuantumultX/blob/master/Scripts/resource-parser.js)）
 - NodeSeek 自动签到功能所需额外步骤：
 
   ```
