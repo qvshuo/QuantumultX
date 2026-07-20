@@ -5,7 +5,7 @@
 ## 功能
 
 - **通用广告过滤**：由 AdGuard DNS Filter 转换而来
-- **应用内去广告 & 去除开屏广告**：支持国内外众多应用
+- **应用内去广告**：支持国内外众多应用
 - **重写解锁**：解锁 **Emby Premiere**，部分解锁 **Spotify Premium**
 - **体验增强**：**Reddit** 自动翻译 & 部分解锁 Premium，**NodeSeek** 自动签到
 
@@ -26,15 +26,10 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list,
 去除广告：
 
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/BiliBiliAdBlockLite.conf, tag=哔哩哔哩 AdBlock Lite, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/AMapAdBlock.conf, tag=高德地图 AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NeteaseCloudMusicAdBlock.conf, tag=网易云音乐 AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XianYuAdBlock.conf, tag=闲鱼 AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/XiaoHongShuAdBlock.conf, tag=小红书 AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/YouTubeAdBlock.conf, tag=YouTube AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/JavDBAdBlock.js, tag=JavDB AdBlock, update-interval=86400, opt-parser=true, enabled=true
 ```
 
 重写解锁：
@@ -46,7 +41,6 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPrem
 体验增强：
 
 ```
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/StartUpAdBlock.conf, tag=墨鱼去开屏, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.snippet, tag=NodeSeek 论坛签到, update-interval=86400, opt-parser=false, enabled=true
 ```
@@ -66,12 +60,9 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 - [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) 
 
 **应用内去广告 规则来源：**
-- [ddgksf2013/Rewrite](https://github.com/ddgksf2013/Rewrite)：哔哩哔哩，小红书 和 知乎
-- [墨魚手記](https://ddgksf2013.top)：高德地图，网易云音乐，闲鱼 和 Reddit
+- [ddgksf2013/Rewrite](https://github.com/ddgksf2013/Rewrite)：知乎
+- [墨魚手記](https://ddgksf2013.top)：高德地图 和 Reddit
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)：YouTube
-
-**去除开屏广告规则来源：**
-- [墨魚手記](https://ddgksf2013.top)：详见 [墨鱼手记的去开屏需求共享文档](https://docs.google.com/spreadsheets/d/1HDDSd5uadmqyd0UuBsIJltuRzLdME0P6LuaWPbURgWM)
 
 **Emby Premiere 解锁思路参考：**
 - [Emby Premiere 破解思路 - 技术 - 远方](https://yuanfangblog.xyz/technology/159.html)

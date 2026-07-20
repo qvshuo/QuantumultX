@@ -22,13 +22,7 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Youtube.snippet -o YouTubeAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/Nodeseek_NsCheckin.js -o NodeSeekCheckIn.js
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AMapAdBlock.conf
-          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseAds.conf -o NeteaseCloudMusicAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf -o RedditAdBlock.conf
-          curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/GoofishAds.conf -o XianYuAdBlock.conf
-          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/StartUpAds.conf -o StartUpAdBlock.conf
-          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/BiliBiliAdsLite.conf -o BiliBiliAdBlockLite.conf
-          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/rewrite/XiaoHongShuAds.conf -o XiaoHongShuAdBlock.conf
-          curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/scripts/javdbapp.ads.js -o JavDBAdBlock.js
           curl -fsSL -H "User-Agent: Quantumult X" https://ddgksf2013.top/scripts/zhihu.ads.js -o ZhihuAdBlock.js
 
       - name: Commit and Push
