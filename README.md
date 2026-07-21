@@ -5,7 +5,7 @@
 ## 功能
 
 - **通用广告过滤**：由 AdGuard DNS Filter 转换而来
-- **应用内去广告**：支持国内外众多应用
+- **应用内去广告**：支持国内外部分应用
 - **重写解锁**：解锁 **Emby Premiere**，部分解锁 **Spotify Premium**
 - **体验增强**：**Reddit** 自动翻译 & 部分解锁 Premium，**NodeSeek** 自动签到
 
