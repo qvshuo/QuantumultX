@@ -59,11 +59,11 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 ## 说明
 
 **通用广告过滤规则来源：**
-- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) 
+- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
+- [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)：秋风广告规则
 
 **应用内去广告 规则来源：**
 - [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zheye)：知乎
-- [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)：秋风广告规则
 - [墨魚手記](https://ddgksf2013.top)：高德地图 和 Reddit
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)：YouTube
 
