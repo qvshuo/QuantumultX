@@ -17,6 +17,7 @@
 
 ```
 https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list, tag=AdGuard DNS Filter, update-interval=604800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/AWAvenueAdsRule.list, tag=秋风广告规则, update-interval=86400, opt-parser=false, enabled=true
 ```
 
 ### 重写规则
@@ -62,6 +63,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 
 **应用内去广告 规则来源：**
 - [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zheye)：知乎
+- [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)：秋风广告规则
 - [墨魚手記](https://ddgksf2013.top)：高德地图 和 Reddit
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)：YouTube
 

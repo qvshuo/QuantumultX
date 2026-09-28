@@ -24,6 +24,7 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/AmapAds.conf -o AMapAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf -o RedditAdBlock.conf
           curl -fsSL https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet -o ZhihuAdBlock.snippet
+          curl -fsSL https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-QuantumultX-Only.Ads.list -o AWAvenueAdsRule.list
 
       - name: Commit and Push
         run: |
