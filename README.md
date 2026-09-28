@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/main/AdGuardDNSfilter.list,
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/AMapAdBlock.conf, tag=高德地图 AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAdBlock.conf, tag=Reddit AdBlock, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/YouTubeAdBlock.conf, tag=YouTube AdBlock, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.js, tag=知乎 AdBlock, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/ZhihuAdBlock.snippet, tag=知乎 AdBlock, update-interval=86400, opt-parser=true, enabled=true
 ```
 
 重写解锁：
@@ -41,6 +41,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/SpotifyPrem
 体验增强：
 
 ```
+https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/GoogleSearchRedirect.conf, tag=Google Search Redirect, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/RedditAutoTranslate.snippet, tag=Reddit Auto Translate, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekCheckIn.snippet, tag=NodeSeek 论坛签到, update-interval=86400, opt-parser=false, enabled=true
 ```
@@ -60,7 +61,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 - [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter) 
 
 **应用内去广告 规则来源：**
-- [ddgksf2013/Rewrite](https://github.com/ddgksf2013/Rewrite)：知乎
+- [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zheye)：知乎
 - [墨魚手記](https://ddgksf2013.top)：高德地图 和 Reddit
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)：YouTube
 
