@@ -63,8 +63,7 @@ https://raw.githubusercontent.com/qvshuo/QuantumultX/refs/heads/main/NodeSeekChe
 - [TG-Twilight/AWAvenue-Ads-Rule](https://github.com/TG-Twilight/AWAvenue-Ads-Rule)：秋风广告规则
 
 **应用内去广告 规则来源：**
-- [墨魚手記知乎净化助手](https://ddgksf2013.top/scripts/zhihu.ads.js)：知乎
-- [墨魚手記](https://ddgksf2013.top)：高德地图 和 Reddit
+- [墨魚手記](https://ddgksf2013.top)：高德地图、知乎和 Reddit
 - [ZenmoFeiShi/Qx](https://github.com/ZenmoFeiShi/Qx)：YouTube
 
 **Emby Premiere 解锁思路参考：**
